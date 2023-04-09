@@ -1,0 +1,25 @@
+.button {
+    min-width: 100px;
+    width: auto;
+    height: 40px;
+    border: 1px solid #999999;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+}
+
+.disabled{
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid #c9c4c4;
+    color: rgb(198, 197, 197);
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.7; 
+}
+
+
+.button:active {
+    background-color: orange;
+    border: 1px solid #999999;
+}
