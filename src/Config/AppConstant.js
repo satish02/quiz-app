@@ -1,1 +1,1 @@
-export const QUESTION_TIMER_IN_SECONDS = 5;
+export const QUESTION_TIMER_IN_SECONDS = 30;
