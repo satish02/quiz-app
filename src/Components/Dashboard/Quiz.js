@@ -11,6 +11,7 @@ const Quiz = ({ quizQuestions}) => {
     const timerRef = useRef(null);
     timerRef.current = timer;
    
+    const questionAnswer = quizQuestions[questionIndex];
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -25,7 +26,7 @@ const Quiz = ({ quizQuestions}) => {
         }, []
     );
 
-    const quizAnswers = quizQuestions.answers.map((answer) => {
+    const quizAnswers = questionAnswer.answers.map((answer) => {
         return <AnswerButton answer={answer} disabledAnswer={timeOut}/>
     });
 
@@ -33,7 +34,7 @@ const Quiz = ({ quizQuestions}) => {
         <>
             <div className="quizContainer">
                 <div className="questionContainer">
-                    <Question question={quizQuestions.question} />
+                    <Question question={questionAnswer.question} />
                 </div>
                 <label className="timer">{timer}</label>
             </div>
