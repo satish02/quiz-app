@@ -1,10 +1,10 @@
 import React from 'react';
 import "./Question.css"
 
-const Question = ({question}) => {
+const Question = ({id, question}) => {
     return(
         <>
-            <label className='question'>{question}</label>
+            <label className='question'>{id}. {question}</label>
         </>
     )
 }

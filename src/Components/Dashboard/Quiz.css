@@ -25,3 +25,9 @@
     font-weight: 500;
     color: red;
 }
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
